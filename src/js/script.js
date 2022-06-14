@@ -1,3 +1,9 @@
+/* Importando el CSS */
+
+import "../css/main.css";
+import "../css/scheme.css";
+
+
 /* Manipulación del DOM */
 
 const $masOpciones = document.querySelector('#bmore');
