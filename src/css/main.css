@@ -427,7 +427,7 @@ footer {
   background-size: cover;
 }
 
-@media screen and (max-width: 1519px) {
+@media screen and (max-width: 1280px) {
   .info {
     background-color: rgba(0, 0, 0, 0.8);
     color: var(--white);
