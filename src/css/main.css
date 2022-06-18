@@ -21,9 +21,7 @@ body {
   background-color: var(--var(--black));
 }
 
-/*----------------
-    NAVBAR
--------------------*/
+/* Navbar */
 
 .show {
   display: flex !important;
@@ -78,7 +76,7 @@ nav .menu {
   position: absolute;
   display: none;
   flex-direction: column;
-  min-width: 200px;
+  min-width: 300px;
   margin-top: 48px;
 
   background-color: var(--white);
@@ -150,9 +148,8 @@ nav .mobile .links a:hover {
   background-color: var(--white);
 }
 
-/*----------------
-    HEADER
--------------------*/
+/* Header */
+
 header {
   background-image: url(../img/halo-infinite-cover-darkmode.jpg);
   background-size: cover;
@@ -160,9 +157,7 @@ header {
   height: 100vh;
 }
 
-/*----------------
-    BANNER
--------------------*/
+/* Banner */
 
 h2 {
   font-size: 2.3rem;
@@ -193,7 +188,7 @@ h2::before {
   width: 500px;
   position: absolute;
   z-index: 100;
-  top: 200px;
+  top: 300px;
   right: 100px;
 
   color: var(--white);
@@ -247,9 +242,8 @@ h2::before {
   transform: scaleX(0.8);
 }
 
-/*----------------
-    VIDEOS
--------------------*/
+/* Video */
+
 .w-75 {
   width: 75%;
   margin: 0 auto;
@@ -314,7 +308,7 @@ h3 {
 #videos #slider #videos-container .item {
   cursor: pointer;
   overflow: hidden;
-  min-width: 280px;
+  min-width: 230px;
   height: 158PX;
 }
 
@@ -353,9 +347,7 @@ h3 {
   z-index: 100;
 }
 
-/*----------------
-    MULTIPLAYER
--------------------*/
+/* Multiplayer */
 
 #multi-player {
   height: 100vh;
@@ -380,9 +372,8 @@ h3 {
   font-size: 20px;
 }
 
-/*----------------
-    GET THE GAME - STORE
--------------------*/
+/* Store */
+
 #get-the-game {
   text-align: center;
   padding: 50px 0;
@@ -400,14 +391,14 @@ h3 {
 
 #get-the-game .item-store {
   display: flex;
-  width: 90%;
+  width: 100%;
   justify-content: center;
   align-items: flex-start;
 }
 
 #get-the-game .item-store .left {
   padding: 0 20px;
-  width: 100%;
+  width: 80%;
 }
 
 #get-the-game .item-store .left img {
@@ -427,14 +418,13 @@ footer {
   background-size: cover;
 }
 
-@media screen and (max-width: 1280px) {
+/* Media Queries */
+
+@media screen and (max-width: 1282px) {
   .info {
     background-color: rgba(0, 0, 0, 0.8);
     color: var(--white);
   }
-}
-
-@media screen and (max-width: 1191px) {
   nav .link-hide {
     display: none;
   }
@@ -486,7 +476,8 @@ footer {
   }
 }
 
-@media screen and (max-width: 701px) {
+
+@media screen and (max-width: 760px) {
   nav {
     width: 100%;
     padding: 0;
@@ -564,5 +555,16 @@ footer {
   margin: 0;
   margin-bottom: 40px;
 }
+#get-the-game .item-store {
+  display: flex;
+  width: 90%;
+  justify-content: center;
+  align-items: flex-start;
+}
+#get-the-game .item-store .left {
+  padding: 0;
+  width: 100%;
+}
+
 
 }
