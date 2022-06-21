@@ -1,6 +1,6 @@
 /* Importando el CSS */
 
-  import "../css/main.css";
+import "../css/main.css";
 import "../css/scheme.css";
 
 
