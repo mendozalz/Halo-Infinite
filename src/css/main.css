@@ -32,6 +32,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 0 5%;
+  font-size: 12px;
 }
 
 nav ul {
@@ -147,6 +148,8 @@ nav .mobile .links a:hover {
   color: var(--black);
   background-color: var(--white);
 }
+
+
 
 /* Header */
 
@@ -420,7 +423,8 @@ footer {
 
 /* Media Queries */
 
-@media screen and (max-width: 1282px) {
+@media screen and (max-width: 1200px) {
+
   .info {
     background-color: rgba(0, 0, 0, 0.8);
     color: var(--white);
