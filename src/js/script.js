@@ -106,3 +106,53 @@ function listVideo(){
 };
 
 listVideo();
+
+/* Dark-mode */
+
+// Solo en efecto de animación
+  document.querySelector(".container").addEventListener("click", () => {
+  document.querySelector(".sol-logo").classList.toggle("animar-sol");
+  document.querySelector(".luna-logo").classList.toggle("animar-luna");
+ /*  document.querySelector("body").classList.toggle("oscuro"); */
+  document.querySelector("header").classList.toggle("dark-theme");
+  document.querySelector("nav .header").classList.toggle("dark-theme");
+  document.querySelector("button#bmenu").classList.toggle("dark-theme");
+  document.querySelector("a.link").classList.toggle("dark-theme");
+  document.querySelector("span.material-symbols-outlined").classList.toggle("dark-theme");
+  
+
+
+  let colorTema;
+    if (configUser.matches) {
+        // Entramos con modo oscuro
+        document.body.classList.toggle('light-theme');
+        colorTema = document.body.classList.contains('light-theme') ? 'light' : 'dark'
+
+    } else {
+        document.body.classList.toggle('dark-theme');
+        colorTema = document.body.classList.contains('dark-theme') ? 'dark' : 'light'
+    }
+    localStorage.setItem('tema', colorTema)
+
+});
+
+/***********************/
+
+const configUser = window.matchMedia('(prefers-color-scheme: dark)');
+const localConfig = localStorage.getItem('tema');
+if (localConfig === 'dark') {
+    document.body.classList.toggle('dark-theme');
+    document.querySelector("header").classList.toggle("dark-theme");
+    document.querySelector("nav .header").classList.toggle("dark-theme");
+    document.querySelector("button#bmenu").classList.toggle("dark-theme");
+    document.querySelector("a.link").classList.toggle("dark-theme");
+    document.querySelector("span.material-symbols-outlined").classList.toggle("dark-theme");
+  } else if (localConfig === 'light') {
+    document.body.classList.toggle('light-theme');
+
+
+    
+    
+
+}
+

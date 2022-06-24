@@ -1,25 +1,59 @@
 /* * {
   box-sizing: border-box;
 }
- */
+*/
 :root{
   --white: #fff;
   --black: #000;
   --greenyellow: #adff2f;
   --celeste: #00c3ff;
   --grisoscuro: #3a3a3a;
-
+  
 }
+/* Cambios de a modo oscuro */
 
-body {
+body.dark-theme {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   padding: 0;
   margin: 0;
   line-height: 1.5;
-
+  
   background-color: var(--var(--black));
 }
+
+header.dark-theme{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+  line-height: 1.5;
+  background-image: url(../img/halo-infinite-cover-darkmode.jpg);
+}
+
+nav .mobile .header.dark-theme {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  flex-direction: row;
+
+  background-color: var(--black);
+}
+
+nav .mobile .header #bmenu.dark-theme {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  color: var(--white);
+}
+nav .mobile .header a.dark-theme {
+  color: var(--white);
+  display: inline-flex;
+  text-decoration: none;
+  padding: 10px;
+}
+
 
 /* Navbar */
 
@@ -30,7 +64,7 @@ body {
 nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding: 0 5%;
   font-size: 12px;
 }
@@ -107,6 +141,7 @@ nav .mobile .header {
   background-color: var(--black);
 }
 
+
 nav .mobile .header a {
   color: var(--white);
   display: inline-flex;
@@ -119,8 +154,9 @@ nav .mobile .header #bmenu {
   background-color: transparent;
   cursor: pointer;
 
-  color: var(--white);
+  color: var(--black);
 }
+
 
 nav .mobile .links {
   display: none;
@@ -571,4 +607,56 @@ footer {
 }
 
 
+}
+
+/* Conmutador */
+
+body {
+  transition: background-color 1s;
+}
+
+
+.container {
+  position: relative;
+}
+
+.sol {
+  font-size: 10rem;
+  width: fit-content;
+  height: fit-content;
+}
+
+.luna {
+  position: absolute;
+  margin-left: -40px;
+  margin-top: 0px;
+}
+
+svg.svg-inline--fa.fa-moon.fa-w-16 {
+  width: 100px;
+  height: 100px;
+}
+
+.luna-logo {
+  opacity: 0;
+  transform: translateY(20%) rotateZ(50deg);
+  transition: all 1s ease-out;
+}
+
+.sol-logo {
+  opacity: 1;
+  transform: translateY(0) rotateZ(0deg);
+  transition: all 1s ease-out;
+}
+
+.animar-sol {
+  opacity: 0;
+  transform: translateY(20%) rotateZ(100deg);
+  color: rgb(13, 119, 211);
+}
+
+.animar-luna {
+  opacity: 1;
+  transform: translateY(0%) rotateZ(0deg);
+  color: rgb(10, 126, 228);
 }
