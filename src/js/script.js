@@ -138,6 +138,16 @@ listVideo();
 
 /***********************/
 
+const sol = document.querySelector(".sol");
+    const luna = document.querySelector(".luna");
+
+    sol.addEventListener("click", ()=>{
+      location.reload();
+    })
+    luna.addEventListener("click", ()=>{
+      location.reload();
+    })
+
 const configUser = window.matchMedia('(prefers-color-scheme: dark)');
 const localConfig = localStorage.getItem('tema');
 if (localConfig === 'dark') {
@@ -146,7 +156,15 @@ if (localConfig === 'dark') {
     document.querySelector("nav .header").classList.toggle("dark-theme");
     document.querySelector("button#bmenu").classList.toggle("dark-theme");
     document.querySelector("a.link").classList.toggle("dark-theme");
+    document.querySelector(".luna").classList.toggle("dark-theme");
+    document.querySelector(".luna").style.opacity=1;
     document.querySelector("span.material-symbols-outlined").classList.toggle("dark-theme");
+    document.querySelector("a.carrito").classList.toggle("dark-theme");
+    document.querySelector("a.logout").classList.toggle("dark-theme");
+    document.querySelector("#multi-player").classList.toggle("dark-theme");
+    document.querySelector("footer").classList.toggle("dark-theme");
+    
+
   } else if (localConfig === 'light') {
     document.body.classList.toggle('light-theme');
 

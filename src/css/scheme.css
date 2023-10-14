@@ -105,23 +105,12 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  
- /*  body.dark-theme {
- 
-    background-color: var(--var(--black));
-    margin: 0;
-  }
-  
-  header.dark-theme{
-    background-image: url(../img/halo-infinite-cover-darkmode.jpg);
-  }
-  nav .mobile .header.dark-theme {
-    display: flex;
-    text-align: center;
-    justify-content: space-between;
-    flex-direction: row;
-  
-    background-color: var(--black);
-  } */
 
+  
+  #videos {
+    color: var(--black);
+  }
+  #get-the-game h2 {
+    color: #000;
+}
 }
